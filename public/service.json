@@ -1,0 +1,53 @@
+
+
+[
+    {
+       "id" :1 , 
+      "name": "Cricket League Registration",
+      "image": "https://i.ibb.co/tPBL8L3/craig-hughes-Re-RVz-RPFJz-A-unsplash.jpg",
+      "price": "$50",
+      "button": "Register Now",
+      "description": "Join our exciting cricket league and showcase your skills. Compete against top teams for a chance to win big!"
+    },
+    {
+        "id" :2 ,
+      "name": "Football Camp Enrollment",
+      "image": "https://i.ibb.co/cxF5bw9/alex-AOL4-f-DQ3-M-unsplash.jpg",
+      "price": "$75",
+      "button": "Enroll Today",
+      "description": "Improve your football skills with our intensive training camp. Learn from experienced coaches and elevate your game."
+    },
+    {
+        "id" :3 ,
+      "name": "Tennis Clinic Membership",
+      "image": "https://i.ibb.co/t2t8VWP/matthias-david-0wb-YOLZw-DPY-unsplash.jpg",
+      "price": "$60/month",
+      "button": "Join Now",
+      "description": "Become a member of our exclusive tennis clinic and receive personalized coaching to enhance your tennis skills."
+    },
+    {
+        "id" :4 ,
+      "name": "Chess Tournament Entry",
+      "image": "https://i.ibb.co/xSK5G4T/hassan-pasha-7-Sj-Eu-EF06-Zw-unsplash.jpg",
+      "price": "$25",
+      "button": "Enter Tournament",
+      "description": "Participate in our chess tournament and challenge fellow chess enthusiasts. Win prizes and prove your strategic prowess."
+    },
+    {
+        "id" :5 ,
+      "name": "Basketball Training Sessions",
+      "image": "https://i.ibb.co/LPQ2SPr/markus-spiske-Bfphc-Cvhl6-E-unsplash.jpg",
+      "price": "$55/session",
+      "button": "Book Session",
+      "description": "Book individual basketball training sessions with our experienced coaches. Improve your skills and dominate the court."
+    },
+    {
+        "id" :6 ,
+      "name": "Badminton Club Membership",
+      "image": "https://i.ibb.co/1LGJYFX/frame-harirak-UR-m-NYmpwco-unsplash.jpg",
+      "price": "$40/month",
+      "button": "Join Club",
+      "description": "Join our badminton club and enjoy unlimited access to our courts. Play with fellow enthusiasts and stay active."
+    }
+  ]
+  
