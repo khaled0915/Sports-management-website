@@ -2,6 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import Navbar from "../Shared/Navbar/Navbar";
 import Banner from "./Banner";
 import ServicesCard from "./ServicesCard";
+import Footer from "./Footer";
 
 
 const Home = () => {
@@ -17,7 +18,7 @@ const Home = () => {
 
             </Navbar>
 
-            <h2 className="text2xl">this is home</h2>
+           
 
 
             <Banner></Banner>
@@ -39,6 +40,12 @@ const Home = () => {
 
                
 
+            </div>
+
+
+
+            <div className="mt-10 w-full">
+            <Footer></Footer>
             </div>
 
 

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 
@@ -33,7 +34,7 @@ const Banner = () => {
 
       </p>
 
-      <button className="btn btn-outline btn-success">Get In Touch</button>
+      <Link to='/login'> <button className="btn btn-outline btn-success">Get In Touch</button> </Link>
 
 
     </div>

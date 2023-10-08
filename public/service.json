@@ -1,53 +1,60 @@
 
-
 [
     {
-       "id" :1 , 
-      "name": "Cricket League Registration",
+      "id": 1,
+      "name": "Cricket Coaching Camp",
       "image": "https://i.ibb.co/tPBL8L3/craig-hughes-Re-RVz-RPFJz-A-unsplash.jpg",
-      "price": "$50",
-      "button": "Register Now",
-      "description": "Join our exciting cricket league and showcase your skills. Compete against top teams for a chance to win big!"
+      "price": "$99",
+      "description": "Join our intensive cricket coaching camp and improve your batting and bowling skills. Suitable for all age groups.",
+      "buttonText": "Learn More",
+
+      "detailed_desc" : "Join our annual cricket tournament and showcase your team's skills. This competitive event is open to all cricket enthusiasts. Compete against other teams, experience thrilling matches, and have a chance to win exciting prizes."
     },
     {
-        "id" :2 ,
-      "name": "Football Camp Enrollment",
+      "id": 2,
+      "name": "Football Tournament",
       "image": "https://i.ibb.co/cxF5bw9/alex-AOL4-f-DQ3-M-unsplash.jpg",
-      "price": "$75",
-      "button": "Enroll Today",
-      "description": "Improve your football skills with our intensive training camp. Learn from experienced coaches and elevate your game."
+      "price": "$69",
+      "description": "Participate in the annual football tournament and showcase your team's talent. Prizes and awards for winners.",
+      "buttonText": "Learn More",
+      "detailed_desc" : "Participate in our football league for an unforgettable sports experience. Sign up as an individual player or with your team. Compete in weekly matches, build camaraderie, and aim for victory to earn fantastic rewards."
+
     },
     {
-        "id" :3 ,
-      "name": "Tennis Clinic Membership",
+      "id": 3,
+      "name": "Tennis Lessons",
       "image": "https://i.ibb.co/t2t8VWP/matthias-david-0wb-YOLZw-DPY-unsplash.jpg",
-      "price": "$60/month",
-      "button": "Join Now",
-      "description": "Become a member of our exclusive tennis clinic and receive personalized coaching to enhance your tennis skills."
+      "price": "$49",
+      "description": "Learn tennis from professional coaches. Beginner to advanced levels. Equipment provided.",
+      "buttonText": "Learn More",
+      "detailed_desc" : "Enhance your tennis skills with our professional coaches at the tennis clinic. Whether you're a beginner or an advanced player, our sessions cater to all levels. Book a session now and start improving your game."
     },
     {
-        "id" :4 ,
-      "name": "Chess Tournament Entry",
-      "image": "https://i.ibb.co/xSK5G4T/hassan-pasha-7-Sj-Eu-EF06-Zw-unsplash.jpg",
+      "id": 4,
+      "name": "Chess Championship",
+      "image":  "https://i.ibb.co/xSK5G4T/hassan-pasha-7-Sj-Eu-EF06-Zw-unsplash.jpg",
       "price": "$25",
-      "button": "Enter Tournament",
-      "description": "Participate in our chess tournament and challenge fellow chess enthusiasts. Win prizes and prove your strategic prowess."
+      "description": "Compete in the annual chess championship and test your strategic skills against top players.",
+      "buttonText": "Learn More",
+      "detailed_desc" :"Get ready for the ultimate chess championship! It's a tournament where chess enthusiasts can showcase their strategic thinking and compete for the championship title. Participation is free, so sharpen your skills and join the challenge."
     },
     {
-        "id" :5 ,
-      "name": "Basketball Training Sessions",
+      "id": 5,
+      "name": "Basketball Camp",
       "image": "https://i.ibb.co/LPQ2SPr/markus-spiske-Bfphc-Cvhl6-E-unsplash.jpg",
-      "price": "$55/session",
-      "button": "Book Session",
-      "description": "Book individual basketball training sessions with our experienced coaches. Improve your skills and dominate the court."
+      "price": "$79",
+      "description": "Enroll in our basketball camp and enhance your dribbling, shooting, and teamwork abilities.",
+      "buttonText": "Learn More",
+      "detailed_desc" :"Enroll your child in our basketball camp for a fun and educational experience. Led by experienced coaches, participants will develop basketball skills, teamwork, and sportsmanship. It's a great opportunity to make new friends and have a blast on the court."
     },
     {
-        "id" :6 ,
-      "name": "Badminton Club Membership",
+      "id": 6,
+      "name": "Badminton Open Challenge",
       "image": "https://i.ibb.co/1LGJYFX/frame-harirak-UR-m-NYmpwco-unsplash.jpg",
-      "price": "$40/month",
-      "button": "Join Club",
-      "description": "Join our badminton club and enjoy unlimited access to our courts. Play with fellow enthusiasts and stay active."
+      "price": "$65",
+      "description": "Participate in the badminton open challenge. Compete with fellow badminton enthusiasts.",
+      "buttonText": "Learn More",
+      "detailed_desc" :"Grab your partner and join our exciting badminton tournament. Compete as a doubles pair and face off against other skilled teams. There are prizes waiting for the winners, so don't miss out on the action-packed event."
     }
   ]
   
