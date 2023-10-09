@@ -72,9 +72,9 @@ const Navbar = () => {
     </div>
     <div className="flex ">
 
-    <a className="btn  mr-3 btn-ghost normal-case text-xl"> 
+    <a className="btn text-amber-500  mr-3 btn-ghost normal-case text-xl"> 
     <FcSportsMode></FcSportsMode>
-    Sports Events </a>
+    SportConnectPro </a>
 
     </div>
     

@@ -3,6 +3,8 @@ import Navbar from "../Shared/Navbar/Navbar";
 import Banner from "./Banner";
 import ServicesCard from "./ServicesCard";
 import Footer from "./Footer";
+import Contact from "./Contact";
+
 
 
 const Home = () => {
@@ -28,7 +30,7 @@ const Home = () => {
             {/* service section   */}
 
 
-            <h1 className=" mt-6 mb-5 text-center font-bold text- text-2xl"> Our Services </h1>
+            <h1 className=" mt-6 mb-5   text-center hover:underline  hover:text-orange-800 font-bold text- text-2xl"> Our Services </h1>
 
 
             <div className="grid gap-5 lg:grid-cols-3 md:grid-cols-2 grid-cols-1  ">
@@ -40,6 +42,12 @@ const Home = () => {
 
                
 
+            </div>
+
+
+
+            <div className="text-center mt-10">
+                <Contact></Contact>
             </div>
 
 
