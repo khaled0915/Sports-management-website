@@ -1,7 +1,45 @@
+import { useContext } from "react";
 import Navbar from "../Shared/Navbar/Navbar";
+import { AuthContext } from "../../Provider/AuthProvider";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 
 const Login = () => {
+
+  const {signIn} = useContext(AuthContext)
+
+  const location = useLocation();
+
+
+  const navigate = useNavigate();
+
+
+
+
+
+  const handleLogin = e =>{
+    e.preventDefault();
+
+    const email = e.target.email.value ;
+    const password = e.target.password.value ;
+
+    console.log(email , password);
+
+    // for login 
+
+    signIn(email ,password)
+    .then(result =>{
+      console.log(result.user)
+
+      navigate(location?.state? location.state :'/')
+    })
+    .catch(error =>{
+      console.error(error)
+    })
+    
+
+     
+  }
     return (
 
         <>
@@ -18,18 +56,18 @@ const Login = () => {
               </div>
               <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
           
-                <form className="card-body">
+                <form onSubmit={handleLogin} className="card-body">
                   <div className="form-control">
                     <label className="label">
                       <span className="label-text">Email</span>
                     </label>
-                    <input type="email" placeholder="email" className="input input-bordered" required />
+                    <input type="email" name='email' placeholder="email" className="input input-bordered" required />
                   </div>
                   <div className="form-control">
                     <label className="label">
                       <span className="label-text">Password</span>
                     </label>
-                    <input type="password" placeholder="password" className="input input-bordered" required />
+                    <input type="password" name='password' placeholder="password" className="input input-bordered" required />
                     <label className="label">
                       <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                     </label>
@@ -38,6 +76,12 @@ const Login = () => {
                     <button className="btn btn-primary">Login</button>
                   </div>
                 </form>
+
+
+                <p className="font-semibold text-center text-white "> New here ? <Link className="text-bold text-blue-600 ml-3" to='/register'>  Register </Link> </p>
+
+
+
               </div>
             </div>
           </div>

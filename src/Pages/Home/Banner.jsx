@@ -34,7 +34,7 @@ const Banner = () => {
 
       </p>
 
-      <Link to='/login'> <button className="btn btn-outline btn-success">Get In Touch</button> </Link>
+      <Link to='/register'> <button className="btn btn-outline btn-success">Get In Touch</button> </Link>
 
 
     </div>
