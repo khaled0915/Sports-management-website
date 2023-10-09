@@ -1,11 +1,35 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../../Provider/AuthProvider";
+
+import { FcSportsMode } from 'react-icons/fc';
+
+
 
 
 const Navbar = () => {
 
-  const {logOut , user} = useContext(AuthContext)
+  const [User , setUser]= useState(null);
+
+
+  const {logOut , user , handleGoogleSingIn} = useContext(AuthContext)
+
+  const handleGoogleBtn = (auth , googleProvider) =>{
+
+    handleGoogleSingIn(auth , googleProvider)
+    .then(result => {
+      const loggedUser = result.user ;
+      console.log(loggedUser);
+      setUser(loggedUser);
+
+    })
+    .catch(error => {
+      console.error(error);
+    })
+
+
+
+  }
 
 
   const handleSignOut =() =>{
@@ -34,6 +58,8 @@ const Navbar = () => {
     return (
 
 
+
+
        <div className="navbar bg-base-100">
   <div className="navbar-start">
     <div className="dropdown">
@@ -44,26 +70,52 @@ const Navbar = () => {
         {NavLinks}
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-xl"> Sports Events </a>
+    <div className="flex ">
+
+    <a className="btn  mr-3 btn-ghost normal-case text-xl"> 
+    <FcSportsMode></FcSportsMode>
+    Sports Events </a>
+
+    </div>
+    
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
       {NavLinks}
     </ul>
   </div>
-  <div className="navbar-end">
+  <div className="navbar-end flex md:flex-row flex-col gap-10">
 
 
     {
 
       user ? 
 
-      <button onClick={handleSignOut} className="btn btn-ghost"> signOut </button> 
+      <button onClick={handleSignOut} className="btn btn-accent btn-xs "> signOut </button> 
 
       : 
 
       <Link to='/login'>  Login  </Link>
 
+    }
+
+
+    <button onClick={handleGoogleBtn } className="btn btn-xs btn-success mr-5 ml-5"> Login With Google </button>
+
+    {
+      User && 
+
+      
+
+
+      <div>
+        <button onClick={handleGoogleBtn } className="btn btn-xs btn-success hidden  ml-5"> Login With Google </button>
+        <h3 className="text-xs font-bold text-red-800 ">
+          User : {User.displayName}
+           </h3>
+           <img className="rounded-full w[60px] h-[50px] mx-auto " src={User.photoURL} alt="" />
+
+      </div>
     }
 
 

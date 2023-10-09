@@ -1,6 +1,13 @@
+import { ToastContainer, toast } from 'react-toastify';
 
+import 'react-toastify/dist/ReactToastify.css';
 
 const ServiceDetailInfo = ({service}) => {
+
+
+  const handleGetNow = () =>{
+    toast.success('you successfully purchase the package')
+  }
 
     const { name , id, image , price , description , buttonText , detailed_desc } =service ;
     return (
@@ -60,7 +67,9 @@ const ServiceDetailInfo = ({service}) => {
     <p className="text-blue-400"> Unlimited Projects 
  </p>
     <div className="card-actions justify-end">
-    <button className="btn btn-outline btn-primary">Get Now</button>
+    <button onClick={handleGetNow} className="btn btn-outline btn-primary">
+      <ToastContainer></ToastContainer>
+      Get Now</button>
       
     </div>
   </div>
@@ -85,7 +94,9 @@ const ServiceDetailInfo = ({service}) => {
 
     <div className="card-actions justify-end">
 
-    <button className="btn btn-outline btn-primary">Get Now</button>
+    <button onClick={handleGetNow}  className="btn btn-outline btn-primary">
+      <ToastContainer></ToastContainer>
+      Get Now</button>
      
     </div>
   </div>

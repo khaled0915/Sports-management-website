@@ -6,6 +6,7 @@ import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Register from "../Pages/Register/Register";
 import ServiceDetail from "../Pages/ServiceDetail/ServiceDetail";
 import PrivateRoute from "./PrivateRoute";
+import About from "../Pages/About/About";
 
 
 const routes = createBrowserRouter([
@@ -36,6 +37,10 @@ const routes = createBrowserRouter([
             {
                 path : '/register',
                 element : <Register></Register>
+            },
+            {
+                path : '/about',
+                element : <About></About>
             }
          
         ]

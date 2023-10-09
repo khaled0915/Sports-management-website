@@ -1,12 +1,23 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import Navbar from "../Shared/Navbar/Navbar";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { Link } from "react-router-dom";
+
+import { ToastContainer, toast } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
+
+
+
+
 
 
 const Register = () => {
 
   const {createUser} = useContext(AuthContext);
+
+  
+
 
 
 
@@ -19,14 +30,37 @@ const Register = () => {
 
     console.log(email , password, name);
 
+    
+
+
+    if(password.length < 6 ){
+      toast.error('Your password should have at least 6 characters  ');
+      return ;
+    }
+    else if(!/[A-Z]/.test(password)){
+      toast.error('Your password must contain at least one capital letter ');
+      return;
+    }
+    else if (!/[!@#$%^&*()_+[\]{};':"\\|,.<>?]/.test(password)){
+      toast.error('Password must contain at least one special character');
+      return;
+    }
+
     // createUser 
 
     createUser(email,password)
     .then(result => {
       console.log(result)
+      if(result.user){
+        toast.success('You registered successfully');
+      }
+      else{
+        toast.error(' registration failed ');
+      }
     })
     .catch(error =>{
       console.error(error)
+      toast.error(error.message)
     })
     
 
@@ -74,9 +108,16 @@ const Register = () => {
         </label>
       </div>
       <div className="form-control mt-6">
-        <button className="btn btn-primary">Register</button>
+        <button className="btn btn-primary"> 
+
+        <ToastContainer></ToastContainer>
+        
+        Register</button>
       </div>
     </form>
+
+
+    
 
     <p className="text-center text-white font-semibold"> Already Registered ? <Link className="text-blue-600 font-bold ml-3" to='/login'>  Login </Link> </p>
   </div>
