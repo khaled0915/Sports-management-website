@@ -44,10 +44,10 @@ const Navbar = () => {
     const NavLinks = <>
 
 
-    <li> <NavLink to='/'>  Home </NavLink>  </li>
-    <li> <NavLink to='/about'>  About Us </NavLink>  </li>
-    <li> <NavLink to='/login'>  Login </NavLink>  </li>
-    <li> <NavLink to='/register'>  Register </NavLink>  </li>
+    <li className="hover:underline hover:text-red-600"> <NavLink to='/'>  Home </NavLink>  </li>
+    <li className="hover:underline"> <NavLink to='/about'>  About Us </NavLink>  </li>
+    <li className="hover:underline"> <NavLink to='/login'>  Login </NavLink>  </li>
+    <li className="hover:underline"> <NavLink to='/register'>  Register </NavLink>  </li>
    
     
     

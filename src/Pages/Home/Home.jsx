@@ -4,6 +4,7 @@ import Banner from "./Banner";
 import ServicesCard from "./ServicesCard";
 import Footer from "./Footer";
 import Contact from "./Contact";
+import Join from "./Join";
 
 
 
@@ -48,6 +49,10 @@ const Home = () => {
 
             <div className="text-center mt-10">
                 <Contact></Contact>
+            </div>
+
+            <div>
+                <Join></Join>
             </div>
 
 
